@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live News Aggregator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Live News Feed</h1>
+        <div class="controls-container">
+            <div class="filters">
+                <select id="country-select">
+                    <option value="us">United States</option>
+                    <option value="gb">United Kingdom</option>
+                    <option value="in">India</option>
+                    <option value="ca">Canada</option>
+                    <option value="au">Australia</option>
+                    <!-- Add more countries as needed -->
+                </select>
+                <select id="category-select">
+                    <option value="">All Categories</option>
+                    <option value="business">Business</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="general">General</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="search" id="search-input" placeholder="Search keywords...">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+         <div id="status-message" class="status">Fetching latest news...</div>
+    </header>
+
+    <main id="news-container">
+        <!-- News articles will be loaded here -->
+    </main>
+
+    <footer>
+        Powered by <a href="https://mediastack.com/" target="_blank" rel="noopener noreferrer">Mediastack.com</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
